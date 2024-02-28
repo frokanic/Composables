@@ -11,11 +11,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.TopAppBarScrollBehavior
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyTopAppBar(
-    title: String
+    title: String,
+    scrollBehavior: TopAppBarScrollBehavior
 ) {
     TopAppBar(
         title = {
@@ -42,14 +45,21 @@ fun MyTopAppBar(
                     contentDescription = "Edit notes"
                 )
             }
-        }
+        },
+        /**
+        This will dictate how the bar will behave, as I scroll up the
+         contents of a scrollable screen.
+         */
+        scrollBehavior = scrollBehavior
     )
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Preview(showBackground = true)
 @Composable
 fun MyTopAppBarPreview() {
     MyTopAppBar(
-        title = "Awesome App"
+        title = "Awesome App",
+        TopAppBarDefaults.pinnedScrollBehavior()
     )
 }
