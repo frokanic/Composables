@@ -5,12 +5,12 @@ import androidx.compose.material3.Icon
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 
@@ -20,7 +20,11 @@ fun MyTopAppBar(
     title: String,
     scrollBehavior: TopAppBarScrollBehavior
 ) {
-    TopAppBar(
+    /**
+     * Possible options are TopAppBar, CenterAlignedTopAppBar, MediumTopAppBar
+     * and LargeTopAppBar
+     */
+    CenterAlignedTopAppBar(
         title = {
             Text(text = title)
         },
@@ -47,8 +51,8 @@ fun MyTopAppBar(
             }
         },
         /**
-        This will dictate how the bar will behave, as I scroll up the
-         contents of a scrollable screen.
+         * This will dictate how the bar will behave, as I scroll up the
+         * contents of a scrollable screen.
          */
         scrollBehavior = scrollBehavior
     )
