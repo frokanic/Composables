@@ -23,6 +23,10 @@ fun Buttons() {
     ) {
         Button(
             onClick = {}
+            /**
+             * Although parameters can be further modified, by leaving them as is, you
+             * can be sure m3 guidelines are being followed. So, change with caution!
+             */
         ) {
             Text(text = "Confirm")
         }
