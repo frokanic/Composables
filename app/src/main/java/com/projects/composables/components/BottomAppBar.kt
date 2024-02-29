@@ -16,19 +16,19 @@ import androidx.compose.ui.tooling.preview.Preview
 fun MyBottomAppBar() {
     BottomAppBar(
         actions = {
-            IconButton(onClick = { /*TODO*/ }) {
+            IconButton(onClick = {}) {
                 Icon(
                     imageVector = Icons.Default.Share,
                     contentDescription = "Share contact"
                 )
             }
-            IconButton(onClick = { /*TODO*/ }) {
+            IconButton(onClick = {}) {
                 Icon(
                     imageVector = Icons.Default.FavoriteBorder,
                     contentDescription = "Mark as favorite"
                 )
             }
-            IconButton(onClick = { /*TODO*/ }) {
+            IconButton(onClick = {}) {
                 Icon(
                     imageVector = Icons.Default.Email,
                     contentDescription = "Send email"
@@ -36,7 +36,7 @@ fun MyBottomAppBar() {
             }
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = { /*TODO*/ }) {
+            FloatingActionButton(onClick = {}) {
                 Icon(
                     imageVector = Icons.Default.Phone,
                     contentDescription = "Call contact"
