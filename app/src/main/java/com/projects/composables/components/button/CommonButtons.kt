@@ -1,4 +1,4 @@
-package com.projects.composables.components
+package com.projects.composables.components.button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
