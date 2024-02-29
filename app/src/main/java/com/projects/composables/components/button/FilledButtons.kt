@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -39,6 +40,34 @@ fun FilledButtons() {
 
         Spacer(modifier = Modifier.height(8.dp))
 
+        Button(
+            onClick = {},
+            shape = CutCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color.Blue
+            )
+        ) {
+            Text(text = "Confirm")
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Button(
+            onClick = {},
+            shape = RoundedCornerShape(10.dp),
+            elevation = ButtonDefaults.buttonElevation(
+                defaultElevation = 10.dp,
+                pressedElevation = 8.dp,
+            ),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xfffedbd0)
+            )
+        ) {
+            Text(
+                text = "Confirm",
+                color = Color.Black
+            )
+        }
     }
 }
 
