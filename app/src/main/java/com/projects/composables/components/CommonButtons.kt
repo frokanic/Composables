@@ -12,7 +12,9 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -24,7 +26,7 @@ import androidx.compose.ui.unit.dp
  * https://developer.android.com/jetpack/compose/components/button
  */
 @Composable
-fun Buttons() {
+fun CommonButtons() {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -66,11 +68,27 @@ fun Buttons() {
         ) {
             Text(text = "Open in browser")
         }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        OutlinedButton(
+            onClick = {}
+        ) {
+            Text(text = "Back")
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        TextButton(
+            onClick = {}
+        ) {
+            Text(text = "Learn more")
+        }
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun ButtonsPreview() {
-    Buttons()
+fun CommonButtonsPreview() {
+    CommonButtons()
 }
