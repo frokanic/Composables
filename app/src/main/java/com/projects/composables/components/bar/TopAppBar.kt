@@ -1,4 +1,4 @@
-package com.projects.composables.components
+package com.projects.composables.components.bar
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material3.Icon
